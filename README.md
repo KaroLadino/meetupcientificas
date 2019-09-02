@@ -119,7 +119,8 @@ Editarlo:
 
 Y copiar lo siguiente en el texto: 
 
-``` [Service]
+``` 
+[Service]
 ExecStart=
 ExecStart=/usr/bin/dockerd -H unix:// -D -H tcp://127.0.0.1:2375 
 ```
@@ -128,7 +129,8 @@ Para cerrar el editor podemos darle Ctrl+O, enter y Ctrl+X
 
 Para finalizar debemos recargar y reiniciar los servicios que estamos usando:"
 
-``` sudo systemctl daemon-reload
+``` 
+    sudo systemctl daemon-reload
     sudo systemctl restart docker 
 ```
 
@@ -290,15 +292,20 @@ Vamos a construir la imagen de Docker con el dockerfile interno que hay
 
 ``` docker build -t openanalytics/shinyproxy-template . ```
 
-Verificamos que la imagen esté disponible
+Verificamos que la imagen esté disponible:
 
 ``` 
-$ docker images | grep "shinyproxy-template\|REPOSITORY"
+docker images | grep "shinyproxy-template\|REPOSITORY"
+```
+
+Observaremos lo siguiente:
+
+```
 REPOSITORY                          TAG                 IMAGE ID            CREATED             SIZE  
 openanalytics/shinyproxy-template   latest              16e8c49e2261        25 minutes ago      851MB  
 ```
 
-Vamos a verificar si la app funciona bien antes de entrar al application.yml
+Vamos a verificar si la app funciona bien antes de entrar al application.yml: 
 
 
 ``` docker run -it -p 3838:3838  openanalytics/shinyproxy-template ```
