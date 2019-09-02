@@ -129,7 +129,7 @@ Para cerrar el editor podemos darle Ctrl+O, enter y Ctrl+X
 Para finalizar debemos recargar y reiniciar los servicios que estamos usando:"
 
 ``` sudo systemctl daemon-reload
-sudo systemctl restart docker 
+    sudo systemctl restart docker 
 ```
 
 [Link de referencia por corregir con creacción de override.conf](https://docs.docker.com/config/daemon/systemd/)
@@ -160,11 +160,13 @@ Actualizamos nuestra lista de paquetes de nuevo:
 
 Ahora instalamos Java :D
 
-``` apt-get install oracle-java11-installer ```
+``` apt-get install default-jdk ```
 
 Sí verificamos la versión instalada deberiamos obtener: 
 
-``` java -version openjdk version "1.8.0_212" ``` 
+``` java -version ```
+
+``` openjdk version "1.8.0_212" ``` 
 
 Si hay problemas nos podemos dirigir a este link: [Instalación de JAVA en Ubuntu](https://thishosting.rocks/install-java-ubuntu/)
 
@@ -208,7 +210,7 @@ Algunas veces no está disponible por default, así que vamos a instalarlo:
 
 Para verificar que está instalado: 
 
-``` screen ```
+``` screen -v ```
 
 Y obtenemos la versión que instalamos.
 
