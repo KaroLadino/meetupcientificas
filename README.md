@@ -50,7 +50,9 @@ Debería salir algo así:
   Candidate: 18.03.1~ce~3-0~ubuntu
   Version table:
      18.03.1~ce~3-0~ubuntu 500
-        500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages ```
+        500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages 
+        
+```
 
 Podemos ver que Docker-ce no está instalado pero tiene un candidato de instalación desde la web de Docker
 
