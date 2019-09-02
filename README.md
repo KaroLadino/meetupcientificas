@@ -121,7 +121,6 @@ Y copiar lo siguiente en el texto:
 
 ``` [Service]
 ExecStart=
-
 ExecStart=/usr/bin/dockerd -H unix:// -D -H tcp://127.0.0.1:2375 
 ```
 
@@ -130,8 +129,8 @@ Para cerrar el editor podemos darle Ctrl+O, enter y Ctrl+X
 Para finalizar debemos recargar y reiniciar los servicios que estamos usando:"
 
 ``` sudo systemctl daemon-reload
-
-sudo systemctl restart docker ```
+sudo systemctl restart docker 
+```
 
 [Link de referencia por corregir con creacción de override.conf](https://docs.docker.com/config/daemon/systemd/)
 
