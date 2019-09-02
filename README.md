@@ -138,7 +138,7 @@ sudo systemctl restart docker
 
 ---
 
-###Java y Maven (Gestor de paquetes)
+### Java y Maven (Gestor de paquetes)
 
 Ahora vamos a instalar Java y Maven para instalar ShinyProxy. 
 
